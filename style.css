@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: yellowgreen;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.box{
+    height: 30px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 5px;
+    
+
+}
+.box1{
+    animation-name: box-loader;
+    /* transform: translateX(200px); */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes box-loader{
+    0%{
+        transform: 0%;
+        box-shadow: 0px 0px 10px cyan;
+
+    }
+    20%{
+        transform: translateX(40px);
+        box-shadow: 0px 0px 10px cyan;
+
+
+    }
+    30%{
+
+    }
+}
+
